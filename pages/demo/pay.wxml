@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <image class='words_img' bindtap="clickImage" src='{{imgUrls}}'></image>
+    <button bindtap="clickImage" class="pay">触发pay事件</button>
+  </view>
+
+
+  <view class="decision">
+    <view wx:if="{{!ruleKey}}" class="error">特性标志pay不存在或没有启用(On)!</view>
+    <view wx:if="{{flagKey}}" class="error">优化本页面的特性标志: {{flagKey}}</view>
+    <view wx:if="{{ruleKey}}" class="error">激活的规则（试验）: {{ruleKey}}</view>
+    <view wx:if="{{variationKey}}" class="error">抽中的版本: {{variationKey}}</view>
+  </view>
+
+  <view class="variables">
+    <view class="header">从云眼取到的变量值：</view>
+
+    <view wx>
+      <text class="key">boolean_variable：</text>
+      <text class="value">{{boolean_variable}}</text>
+    </view>
+
+    <view wx>
+      <text class="key">integer_variable：</text>
+      <text class="value">{{integer_variable}} (pay事件的revenue)</text>
+    </view>
+
+    <view wx>
+      <text class="key">double_variable：</text>
+      <text class="value">{{double_variable}} (pay事件的value)</text>
+    </view>
+
+    <view wx>
+      <text class="key">string_variable：</text>
+      <text class="value">{{string_variable}}</text>
+    </view>
+
+    <view wx>
+      <text class="key">json_variable：</text>
+      <text class="value">{{json_variable}}</text>
+    </view>
+  </view>
+  <view wx class="explain">
+    <text>解说：程序员仅需调用云眼API获取参数值和发送事件，无需了解试验信息（如：试验名称、版本名称、流量分配、受众、指标等），最大程度减少程序员工作量，并将程序员与AB测试业务解耦。</text>
+  </view>
+
+  <button bindtap="onConfigButtonTap" class="goToConfig">返回首页</button>
+</view>

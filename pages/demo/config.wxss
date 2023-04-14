@@ -1,0 +1,46 @@
+/* pages/home/config.wxss */
+.text-container {
+  display: grid;
+  padding: 20rpx;
+}
+.app_address{
+  font-weight: bolder;
+  font-size: 44rpx;
+  color: blue;
+}
+h1 {
+  margin-right: auto;
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+
+.form-title {
+  font-size: large;
+}
+
+.text-paragraph {
+  display: grid;
+  padding-left: 0rpx;
+  /*background-color: lightyellow;*/
+}
+
+text {
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+}
+
+.form-hint {
+  font-size: small;
+  font-style: italic;
+}
+
+.input-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.variables{
+  margin: 0 30rpx 0 30rpx;
+}

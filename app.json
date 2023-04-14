@@ -1,0 +1,22 @@
+{
+  "plugins": {
+    "abtest": {
+      "version": "1.0.1",
+      "provider": "wxa451587ffbe6b9f4"
+    }
+  },
+  "pages": [
+    "pages/demo/config",
+    "pages/demo/attributes",
+    "pages/demo/buy",
+    "pages/demo/pay"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d93b56",
+    "navigationBarTitleText": "AB测试功能演示",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

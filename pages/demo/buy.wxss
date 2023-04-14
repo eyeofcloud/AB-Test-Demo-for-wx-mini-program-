@@ -1,0 +1,8 @@
+button.buy {
+  position: absolute;
+  top: 180rpx;
+  right: 100rpx;  
+}
+.header {
+  font-weight: 600;
+}

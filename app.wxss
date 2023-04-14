@@ -1,0 +1,58 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+view {
+  box-sizing: border-box;
+  color: #3a3939;
+  font-size: 35rpx;
+}
+.input {
+  border: 2px solid #f1bdce;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  width: cal(100%-10rpx);
+}
+.decision {
+  background-color: rgb(236, 245, 236);
+  align-self: normal;
+  font-size: medium;
+  padding: 20rpx;
+}
+.variables {
+  background-color: rgb(213, 233, 247);
+  align-self: normal;
+  font-size: medium;
+  padding: 20rpx;
+}
+.header {
+  font-weight: bold;
+}
+.words_img{
+  height: 300rpx;
+}
+.explain {
+  background-color: rgb(236, 245, 236);
+  align-self: normal;
+  font-size: medium;
+  padding: 20rpx;
+  margin-bottom: 10rpx; 
+}
+button {
+  background-color: indianred;
+  color: white;
+  font-size: medium;
+}
+button.goToConfig{
+  margin-right: 10rpx;  
+}
+
+.readonly-text {
+  user-select: text;
+}

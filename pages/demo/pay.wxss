@@ -1,0 +1,5 @@
+button.pay {
+  position: absolute;
+  top: 130rpx;
+  left: 80rpx;  
+}

@@ -1,0 +1,19 @@
+<view class='attributes'>
+  <view class="items">
+    <view>用户Id：</view>
+
+    <view class="readonly-text" bindlongpress="onLongPress">{{username}}</view>
+
+    <view>兴趣爱好：</view>
+    <input class="input" value="{{inputInterest}}" bindinput="onInputInterest" placeholder="输入兴趣爱好，如：阅读、健身、旅游..." />
+
+    <view>所在城市：</view>
+    <input class="input" value="{{inputCity}}" bindinput="onInputCity" placeholder="输入城市名称，如：北京、南京、上海..." />
+    <view class="explain">
+    说明：用户Id 用于白名单测试。属性和受众是云眼高级功能，需要在云眼平台上为本项目设置“interest”和“city”两个属性，否则云眼不采集这两个属性数据。
+  </view>  </view>
+
+  <button bindtap="onShopping">开始购物</button>
+
+
+</view>

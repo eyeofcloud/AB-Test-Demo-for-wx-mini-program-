@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <image class='words_img' bindtap="clickImage" src='{{imgUrls}}'></image>
+    <button bindtap="clickImage" class="buy">触发buy事件</button>
+  </view>
+  <view class="decision">
+    <view wx:if="{{!ruleKey}}" class="error">特性标志buy不存在或没有启用(On)!</view>
+    <view wx:if="{{flagKey}}" class="error">优化本页面的特性标志: {{flagKey}}</view>
+    <view wx:if="{{ruleKey}}" class="error">激活的规则（试验）: {{ruleKey}}</view>
+    <view wx:if="{{variationKey}}" class="error">抽中的版本: {{variationKey}}</view>
+  </view>
+ 
+  <view class="variables">
+    <view class="header">从云眼取到的变量值：</view>
+    <view wx>
+      <text class="key">boolean_variable：</text>
+      <text class="value">{{boolean_variable}}</text>
+    </view>
+
+    <view wx>
+      <text class="key">integer_variable：</text>
+      <text class="value">{{integer_variable}}</text>
+    </view>
+
+    <view wx>
+      <text class="key">double_variable：</text>
+      <text class="value">{{double_variable}} (buy事件的value)</text>
+    </view>
+
+    <view wx>
+      <text class="key">string_variable：</text>
+      <text class="value">{{string_variable}}</text>
+    </view>
+
+    <view wx>
+      <text class="key">json_variable：</text>
+      <text class="value">{{json_variable}}</text>
+    </view>
+  </view>
+  <view class='explain'>
+    <text>解说：在实际的小程序中，程序员使用这些变量值控制小程序的页面展示、业务逻辑、推荐策略、AI参数等各个方面。\n这里做了简化，仅将变量值打印出来，便于理解，也可用于QA测试。</text>
+  </view>
+  <button bindtap="onConfigButtonTap" class="goToConfig">返回首页</button>
+</view>

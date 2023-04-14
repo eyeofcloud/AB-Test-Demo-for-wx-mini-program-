@@ -1,0 +1,26 @@
+<!-- config.wxml -->
+<view class="container">
+  <view class="text-container">
+    <h1>云眼产品介绍</h1>
+    <text>1. 在云眼平台（app.eyeofcloud.com）创建一个“特性标志”项目。\n</text>
+    <text>2. 创建2个特性标志：buy, pay</text>
+    <text>3. 每个特性标志都填加如下变量：</text>
+    <text class="variables">boolean_variable, string_variable, integer_variable, double_variable, json_variable
+    </text>
+    <text>4. 在“事件管理”增加2个事件：buy，pay
+    </text>
+    <h1>使用变量值和触发事件（程序员）</h1>
+    <text>1. 设置开发环境SDK键：\n</text>
+    <input class="input" value="{{sdkKey}}" bindinput="onInput" placeholder="例如:1000122_2e2d7fbdea1afc51" />
+    <text class="form-hint"></text>
+    <text>2. 在小程序中调用云眼API获取变量值并使用；在合适时机触发事件。可参考本小程序代码。</text>
+    <h1>AB测试业务操作（业务人员）</h1>
+    <text>在云眼平台上做试验：创建版本、试验（A/B测试，人工智能、推出），指标、受众、互斥组等，以及调整流量等各种操作。</text>
+    <h1>访问小程序（用户）</h1>
+
+    <button bindtap="onSaveConfig">访问小程序页面</button>
+
+    <h1>结果分析（业务人员）</h1>
+    <p>在云眼平台“试验报告”页面查看试验结果图表数据，看到怎样的参数设置能够获得最佳的转化效果。</p>
+  </view>
+</view>
